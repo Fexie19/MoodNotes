@@ -1,7 +1,6 @@
 
 
-#SEBELUM MENJALANKAN PROGRAM, HARAP INSTALL RICH DI TERMINAL MENGGUNAKAN COMMAND "pip install rich" (library Rich)
-
+Tunggu : pip install rich
 
 import json
 import os
@@ -12,9 +11,8 @@ import time
 
 DB_FILE = "moodnote.json"
 
-# =======================
-# DATABASE
-# =======================
+
+# Load DATABASE
 
 def load_db():
     if not os.path.exists(DB_FILE):
