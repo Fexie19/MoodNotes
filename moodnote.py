@@ -24,9 +24,8 @@ def save_db(db):
     with open(DB_FILE, "w") as f:
         json.dump(db, f, indent=4)
 
-# =======================
 # REGISTER
-# =======================
+
 def register():
     db = load_db()
     print("\n=== REGISTER ===")
@@ -43,9 +42,9 @@ def register():
 
     print("✅ Akun berhasil dibuat!")
 
-# =======================
+
 # LOGIN
-# =======================
+
 def login():
     db = load_db()
     print("\n=== LOGIN ===")
@@ -61,9 +60,9 @@ def login():
     return None 
 
 
-# =======================
-# DETAIL MOOD (Rating + Comment)
-# =======================
+
+# DETAIL MOOD (Rating + Comment) 
+
 def lihat_detail_mood(mood, current_user, idx):
     while True:
         
